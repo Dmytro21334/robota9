@@ -1,0 +1,16 @@
+import java.util.function.Predicate;
+
+public class Main {
+    public static void main(String[] args) {
+        Predicate<Integer> isMaster = new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer course) {
+                return course == 5 || course == 6;
+            }
+        };
+
+        System.out.println(isMaster.test(1)); 
+        System.out.println(isMaster.test(2));
+        System.out.println(isMaster.test(5)); 
+    }
+}
