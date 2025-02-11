@@ -12,9 +12,9 @@ public class Main {
             }
         };
 
-        System.out.println(gradeToText.apply(95)); // Відмінно
-        System.out.println(gradeToText.apply(80)); // Добре
-        System.out.println(gradeToText.apply(70)); // Задовільно
-        System.out.println(gradeToText.apply(50)); // Незадовільно
+        System.out.println(gradeToText.apply(95)); 
+        System.out.println(gradeToText.apply(80)); 
+        System.out.println(gradeToText.apply(70)); 
+        System.out.println(gradeToText.apply(50)); 
     }
 }
