@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> grades = Arrays.asList(95, 85, 75, 65, 55, 45);
+
+        Predicate<Integer> passedExam = grade -> grade >= 60;
+        Function<Integer, String> gradeToText = grade -> {
+            if (grade >= 90) return "Відмінно";
+            else if (grade >= 75) return "Добре";
+            else if (grade >= 60) return "Задовільно";
+            else return "Незадовільно";
+        };
+
+        for (Integer grade : grades) {
+            if (passedExam.test(grade)) {
+                System.out.println(gradeToText.apply(grade));
+            }
+        }
+    }
+}
