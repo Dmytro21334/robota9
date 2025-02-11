@@ -1,0 +1,20 @@
+import java.util.function.Function;
+
+public class Main {
+    public static void main(String[] args) {
+        Function<Integer, String> gradeToText = new Function<Integer, String>() {
+            @Override
+            public String apply(Integer grade) {
+                if (grade >= 90) return "Відмінно";
+                else if (grade >= 75) return "Добре";
+                else if (grade >= 60) return "Задовільно";
+                else return "Незадовільно";
+            }
+        };
+
+        System.out.println(gradeToText.apply(95)); // Відмінно
+        System.out.println(gradeToText.apply(80)); // Добре
+        System.out.println(gradeToText.apply(70)); // Задовільно
+        System.out.println(gradeToText.apply(50)); // Незадовільно
+    }
+}
