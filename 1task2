@@ -1,6 +1,6 @@
 import java.util.function.Function;
 
-public class Main {
+public class task2 {
     public static void main(String[] args) {
         Function<Integer, String> gradeToText = grade -> {
             if (grade >= 90) return "Відмінно";
