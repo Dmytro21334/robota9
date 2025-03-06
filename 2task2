@@ -1,6 +1,6 @@
 import java.util.function.Predicate;
 
-public class Main {
+public class task4 {
     public static void main(String[] args) {
         Predicate<Integer> isMaster = course -> course == 5 || course == 6;
 
