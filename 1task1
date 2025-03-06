@@ -1,6 +1,6 @@
 import java.util.function.Function;
 
-public class 1task1 {
+public class task1 {
     public static void main(String[] args) {
         Function<Integer, String> gradeToText = new Function<Integer, String>() {
             @Override
